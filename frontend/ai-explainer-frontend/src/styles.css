@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+/* styles.css - global */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background: rgb(6, 0, 7); /* your preferred background color */
+  margin: 0;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}

@@ -1,0 +1,33 @@
+<h2>AI Code & Math Explainer</h2>
+<textarea [(ngModel)]="userInput" rows="6" cols="60"
+  placeholder="Enter code or math problem"
+  spellcheck="false"></textarea>
+
+<br/>
+
+<!-- Custom Dropdown -->
+<div class="custom-dropdown" (click)="toggleDropdown()">
+  <div class="selected">{{ inputType === 'code' ? 'Code' : 'Math' }}</div>
+  <ul class="options" *ngIf="dropdownOpen">
+    <li (click)="selectOption('code', $event)">Code</li>
+    <li (click)="selectOption('math', $event)">Math</li>
+  </ul>
+</div>
+
+<br/><br/>
+
+<button (click)="getExplanation()">Explain</button>
+
+<!-- ✅ Custom Alert UI -->
+<div *ngIf="showAlert" class="custom-alert">
+  <div class="alert-box">
+    <p>Please enter code or math problem!</p>
+    <button (click)="closeAlert()">OK</button>
+  </div>
+</div>
+
+<!-- Explanation -->
+<div *ngIf="explanation">
+  <h3>Explanation:</h3>
+  <pre>{{ explanation }}</pre>
+</div>

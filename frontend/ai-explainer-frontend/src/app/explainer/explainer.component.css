@@ -1,0 +1,170 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #cf3dcf;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #b40e90;
+  margin-top: 20px;
+}
+
+textarea, select {
+  width: 100%;
+  max-width: 700px;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #7e0e5b;
+  font-family: Arial, sans-serif; 
+  font-size: 16px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+  outline: none;
+  color: #fff;
+
+  /* 🎨 Gradient background */
+  background: linear-gradient(to right, #80097e, #d73081);
+  color: #fff; /* makes text visible on dark gradient */
+}
+
+textarea:focus, select:focus {
+  border-color: #d73081;
+  box-shadow: 0 0 8px rgba(180, 155, 172, 0.3);
+}
+
+textarea::placeholder {
+  color: #fff;
+  opacity: 0.8; /* optional, makes it slightly lighter */
+}
+
+select option {
+  background: #80097e;   /* solid bg so text is visible */
+  color: #fff;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: linear-gradient(to right, #80097e, #d73081);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(to right,#d73081, #80097e);
+}
+
+div[ng-reflect-ng-if] {
+  margin-top: 20px;
+  max-width: 700px;
+  background: #f5f7fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  color: #ecf0f5;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+pre {
+  background:  linear-gradient(to right,#d73081, #80097e);
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+.custom-dropdown {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  background: linear-gradient(to right, #80097e, #d73081);
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 12px;
+
+}
+
+.custom-dropdown .selected {
+  font-size: 14px;
+}
+
+.custom-dropdown .options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+  z-index: 10;
+  background:#800964;
+}
+
+.custom-dropdown .options li {
+  padding: 12px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.custom-dropdown .options li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+h3{
+  color: #b40e90;
+  margin-top: 30px;
+}
+
+.custom-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dim background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.alert-box {
+  background: rgb(37, 1, 44);
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px #fff(239, 233, 233, 0.3);
+  text-align: center;
+  max-width: 300px;
+}
+
+.alert-box p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.alert-box button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #80097e, #d73081);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
